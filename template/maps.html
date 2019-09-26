@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flight Path</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+  </head>
+  <body>
+  <div id="target"></div>
+    <div id="floating-panel">
+      <input onclick="saveMarkers();" type="button" value="Save Journey">
+      <input onclick="deleteMarkers();" type=button value="Refresh Map">
+      <input onclick="drawMarkers();" type=button value="Draw Path">
+      <input onclick="fetchMarkers();" type=button value="Fetch Previous Journey Details">
+    </div>
+    <div id="map"></div>
+    <p id="journey">Click on the map to add markers.</p>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZbdCfzWQy426E19xB3YqRcqjZeFFCf3U&callback=initMap">
+    </script>
+     <script src="../static/js/myscripts.js"></script>
+
+  </body>
+</html>
